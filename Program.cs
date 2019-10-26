@@ -16,6 +16,11 @@ namespace WebApplication2
             CreateHostBuilder(args).Build().Run();
         }
 
+        public static void Test()
+        {
+            Console.WriteLine("This is a test");
+        }
+
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
